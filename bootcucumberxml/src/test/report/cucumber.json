@@ -1,0 +1,204 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "client makes call to POST /test/person",
+        "description": "",
+        "id": "create-a-new-person-through-put-and-get-appropriate-response;client-makes-call-to-post-/test/person",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 342508367,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the client calls /test/person",
+            "match": {
+              "location": "TestXmlStepsDefs.client_issues_POST_person()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5290641,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client receives POST status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 40
+                }
+              ],
+              "location": "TestXmlStepsDefs.the_client_receives_POST_status_code_of(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1132895,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client receives xml of type Person",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Person",
+                  "offset": 32
+                }
+              ],
+              "location": "TestXmlStepsDefs.the_client_receives_xmltype_person(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 140724,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "the client receives person name Charlie",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Charlie",
+                  "offset": 32
+                }
+              ],
+              "location": "TestXmlStepsDefs.the_client_receives_person_name(String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 485527,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "the client receives person age 32",
+            "match": {
+              "arguments": [
+                {
+                  "val": "32",
+                  "offset": 31
+                }
+              ],
+              "location": "TestXmlStepsDefs.the_client_receives_person_age(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 55151,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "the client receives person email charlie@gmail.com",
+            "match": {
+              "arguments": [
+                {
+                  "val": "charlie@gmail.com",
+                  "offset": 33
+                }
+              ],
+              "location": "TestXmlStepsDefs.the_client_receives_person_email(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Create a new person through PUT and get appropriate response",
+    "description": "",
+    "id": "create-a-new-person-through-put-and-get-appropriate-response",
+    "keyword": "Feature",
+    "uri": "person.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@person"
+      }
+    ]
+  },
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 3,
+        "name": "client makes call to GET /test/version",
+        "description": "",
+        "id": "get-the-version-of-the-program;client-makes-call-to-get-/test/version",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 19709624,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "the client calls /test/version",
+            "match": {
+              "location": "TestStepDefs.client_issues_GET_version()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 187385,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "the client receives status code of 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 35
+                }
+              ],
+              "location": "TestStepDefs.the_client_receives_status_code_of(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 51565,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "the client receives server version Version 1.0",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Version 1.0",
+                  "offset": 35
+                }
+              ],
+              "location": "TestStepDefs.the_client_receives_server_version(String)"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "Get the version of the program",
+    "description": "",
+    "id": "get-the-version-of-the-program",
+    "keyword": "Feature",
+    "uri": "version.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@version"
+      }
+    ]
+  }
+]
